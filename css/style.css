@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* Navigation Menu */
@@ -12,12 +13,10 @@
 
 #main-nav ul {
   display: flex;
-  flex: 1;
   list-style: none;
   justify-content: space-evenly;
   padding-top: 5px;
   font-size: 1.5rem;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #main-nav ul li {
@@ -33,6 +32,7 @@
   color: aqua;
 }
 
+/* Showcase */
 .showcase {
   width: auto;
   height: 100vh;
@@ -44,25 +44,26 @@
 }
 
 .showcase h1 {
-  position: relative;
-  top: 10%;
-  left: 39%;
   font-size: 45px;
+  text-align: center;
+  padding-top: 10px;
 }
 .showcase p {
-  position: relative;
-  top: 15%;
-  left: 44.5%;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 20px;
 }
 
-.showcase .button {
-  height: 20px;
-  position: relative;
-  margin: -20px -50px;
-  width: 300px;
+/* Button */
+
+.container {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+.container .button {
+  width: 30%;
   height: 50px;
-  top: 20%;
-  left: 46%;
   border: #000 1px solid;
   font-size: 50px;
   text-decoration: none;
@@ -78,6 +79,67 @@
   background-color: rgba(255, 255, 255, 0.3);
 }
 
+/* Section: About */
+.about {
+  display: flex;
+  height: 100vh;
+  margin-top: 20px;
+  border-bottom: #000 solid 3px;
+}
+
+.about img {
+  height: 50vh;
+  max-width: 50%;
+  flex: 1;
+  border: aqua 1px solid;
+  border-radius: 50%;
+}
+
+.about .bio {
+  margin-left: 10px;
+  text-align: center;
+}
+
+.about .bio h1 {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.about p {
+  flex: 1;
+  text-align: left;
+}
+
+/* Section: Pricing */
+#pricing {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background: aqua;
+}
+
+#pricing #l-heading {
+  text-align: center;
+}
+
+#pricing #prices-location {
+  display: flex;
+}
+
+#pricing #prices-location p {
+  text-transform: none;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+#pricing #prices-location h1 {
+  flex: 1;
+}
+
+#prices-location ul {
+  text-decoration: none;
+  flex: 1;
+}
+
+/* Footer */
 #main-footer {
   text-align: center;
   height: 40px;
