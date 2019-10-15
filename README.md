@@ -1,6 +1,6 @@
 A page i built for a mate as practice.
 
-Main aim was to practice my html tags an css knowledge.
+Main aim was to practice my html tags and css knowledge.
 
 Implemented JS in the smooth scrolling.
 
