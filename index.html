@@ -14,16 +14,16 @@
   <body>
     <nav id="main-nav">
       <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#pricing">Pricing</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#landing" class="button">Home</a></li>
+        <li><a href="#about" class="button">About</a></li>
+        <li><a href="#pricing" class="button">Pricing</a></li>
+        <li><a href="#" class="button">Contact</a></li>
       </ul>
     </nav>
     <section id="landing">
       <div class="showcase">
         <h1>The sound of BootCamp</h1>
         <p>Giving back to those who give so much</p>
-        <!-- <img src="./img/main img.jpg" alt="main-logo" /> -->
         <div class="container">
           <a href="#" class="button"
             >Learn More <i class="fas fa-arrow-circle-down"></i
@@ -93,6 +93,29 @@
       </div>
     </section>
   </body>
+
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"
+  ></script>
+
+  <script>
+    //Smooth Scrolling
+    $(".button").on("click", function(event) {
+      if (this.hash !== "") {
+        event.preventDefault();
+        const hash = this.hash;
+        $("html, body").animate(
+          {
+            scrollTop: $(hash).offset().top
+          },
+          800
+        );
+      }
+    });
+  </script>
+
   <footer id="main-footer">
     <p>The Sound of BootCamp &copy; 2019 | Site designed by Neil Farrier</p>
   </footer>
