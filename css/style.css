@@ -36,8 +36,7 @@
 .showcase {
   width: auto;
   height: 100vh;
-  background: url("../img/marc-sendra-martorell-J3yMHRbg2b8-unsplash.jpg")
-    no-repeat center center/cover;
+  background: url("../img/marc-sendra-martorell-J3yMHRbg2b8-unsplash.jpg") no-repeat center center/cover;
   background-size: 100%;
   height: 100vh;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -48,6 +47,7 @@
   text-align: center;
   padding-top: 10px;
 }
+
 .showcase p {
   text-align: center;
   padding-top: 15px;
@@ -61,6 +61,7 @@
   height: auto;
   text-align: center;
 }
+
 .container .button {
   width: 30%;
   height: 50px;
@@ -113,30 +114,67 @@
 /* Section: Pricing */
 #pricing {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  background: aqua;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  padding: 1rem;
 }
 
-#pricing #l-heading {
+#l-heading {
   text-align: center;
 }
 
-#pricing #prices-location {
+#prices {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border-right: 2px solid #000;
+  border-left: 2px solid #000;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  background: aqua;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-#pricing #prices-location p {
+#prices ul {
+  text-decoration: none;
+  list-style: none;
+}
+
+.picture {
+  justify-self: center;
+  border-right: 2px solid #000;
+  border-left: 2px solid #000;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  width: 464px;
+  height: 352px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.picture img {
+  max-width: 100%;
+  height: 100%;
+}
+
+#location {
+  display: flex;
+  flex-direction: column;
+  background: aqua;
+  border-right: 2px solid #000;
+  border-left: 2px solid #000;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  justify-content: center;
+}
+
+#location p {
   text-transform: none;
   font-weight: normal;
   font-size: 16px;
-}
-
-#pricing #prices-location h1 {
-  flex: 1;
-}
-
-#prices-location ul {
-  text-decoration: none;
-  flex: 1;
 }
 
 /* Footer */
